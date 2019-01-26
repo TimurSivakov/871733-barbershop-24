@@ -8,13 +8,13 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="main-header-logo">
-        <img src="img/index-logo.svg" alt="Логотип барбершопа «Бородинский»" width="368" height="153">
+        <img src="img/index-logo.svg" alt="Логотип барбершопа «Бородинский»" width="111" height="24">
       </a>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="news.html">Новости</a></li>
         <li><a href="price.html">Прайс-лист</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
@@ -22,17 +22,20 @@
       </ul>
     </nav>
     <main class="container">
-      <h1>Средства для ухода</h1>
+      <h1 class="page-title">Средства для ухода</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li class="breadcrumbs-current">Средства для ухода</li>
+      </ul>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <!-- Здесь будет форма -->
+      </section>
 
-      <nav class="secondary-navigation">
-        <ul class="catalog-navigation">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Средства для ухода</a></li>
-        </ul>
-      </nav>
 
       <section class="catalog">
+        <h2 class="visually-hidden">Список средств для ухода</h2>
         <div class="catalog-item">
           <img src="#" alt="Набор для путешествий «Baxter of California»">
           <h3>Набор для путешествий «Baxter of California»</h3>
