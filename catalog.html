@@ -32,6 +32,25 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
+        <form class="producers" action="index.html" method="post">
+          <legend class="producers-legend">Производители</legend>
+          <input type="checkbox" id="baxter" name="producers" value="" checked>
+          <label for="baxter">Baxter of California</label><br>
+          <input type="checkbox" id="mr-natty" name="producers" value="">
+          <label for="mr-natty">Mr Natty</label><br>
+          <input type="checkbox" id="suavecito" name="producers" value="" checked>
+          <label for="suavecito">Suavecito</label><br>
+          <input type="checkbox" id="murrays" name="producers" value="">
+          <label for="murrays">Murray's</label><br>
+          <input type="checkbox" id="american-crew" name="producers" value="" checked>
+          <label for="american-crew">American Crew</label><br>
+        </form>
+        <form class="groups" action="index.html" method="post">
+          <legend class="product-groups">Группы товаров</legend>
+          <input type="radio" name="product-groups-radio" value="shaving-accessories" id="shaving-accessories"><label for="shaving-accessories">Бритвенные принадлежности</label><br>
+          <input type="radio" name="product-groups-radio" value="care-products" id="care-products" checked><label for="care-products">Средства для ухода</label><br>
+            <input type="radio" name="product-groups-radio" value="accessories" id="accessories"><label for="accessories">Аксессуары</label><br>
+        </form>
       </section>
 
       <section class="catalog">
