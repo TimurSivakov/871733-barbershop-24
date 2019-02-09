@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner-page">
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="main-header-logo">
@@ -39,27 +42,27 @@
           <legend class="producers-legend">Производители</legend>
           <ul>
             <li class="filter-option">
-              <input type="checkbox" id="baxter" name="producers" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="baxter" name="producers"  checked>
               <label for="baxter">Baxter of California</label>
             </li>
             <li class="filter-option">
-              <input type="checkbox" id="mr-natty" name="producers">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="mr-natty" name="producers">
               <label for="mr-natty">Mr Natty</label>
             </li>
             <li class="filter-option">
-              <input type="checkbox" id="suavecito" name="producers" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="suavecito" name="producers" checked>
               <label for="suavecito">Suavecito</label>
             </li>
             <li class="filter-option">
-              <input type="checkbox" id="malin-goetz" name="producers">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="malin-goetz" name="producers">
               <label for="malin-goetz">Malin+Goetz</label>
             </li>
             <li class="filter-option">
-              <input type="checkbox" id="murrays" name="producers">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="murrays" name="producers">
               <label for="murrays">Murray's</label>
             </li>
             <li class="filter-option">
-              <input type="checkbox" id="american-crew" name="producers" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="american-crew" name="producers" checked>
               <label for="american-crew">American Crew</label>
             </li>
           </ul>
@@ -68,15 +71,15 @@
           <legend class="product-groups">Группы товаров</legend>
           <ul>
             <li>
-              <input type="radio" name="product-groups-radio" value="shaving-accessories" id="shaving-accessories">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-groups-radio" value="shaving-accessories" id="shaving-accessories">
               <label for="shaving-accessories">Бритвенные принадлежности</label>
             </li>
             <li>
-              <input type="radio" name="product-groups-radio" value="care-products" id="care-products" checked>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-groups-radio" value="care-products" id="care-products" checked>
               <label for="care-products">Средства для ухода</label>
             </li>
             <li>
-              <input type="radio" name="product-groups-radio" value="accessories" id="accessories">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-groups-radio" value="accessories" id="accessories">
               <label for="accessories">Аксессуары</label>
             </li>
           </ul>
@@ -213,8 +216,29 @@
   <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-password-info">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+      </p>
+      <button class="button" type="submit">
+        Войти
+      </button>
+    </form>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
   </section>
 </body>
 

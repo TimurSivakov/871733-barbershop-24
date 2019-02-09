@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -27,40 +30,6 @@
     <main class="container">
 
       <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
-      <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="user-login">Логин</label>
-            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-          </p>
-          <p>
-            <label class="visually-hidden" for="user-password">Пароль</label>
-            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-          </p>
-          <p class="login-password-info">
-            <label class="login-checkbox">
-              <input type="checkbox" name="remember">
-              Запомните меня
-            </label>
-            <a class="restore" href="#">Я забыл пароль!</a>
-          </p>
-          <button class="button" type="submit">
-            Войти
-          </button>
-        </form>
-        <button class="modal-close" type="button">
-          Закрыть
-        </button>
-      </section>
-      <section class="modal modal-map">
-       <h2 class="visually-hidden">Как до нас добраться</h2>
-       <p>
-         <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-       </p>
-       <button class="modal-close" type="button">Закрыть</button>
-     </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
@@ -79,6 +48,7 @@
         </ul>
       </section>
 
+      <div class="index-columns">
       <section class="news">
         <h2>Новости</h2>
         <ul class="news-list">
@@ -102,7 +72,8 @@
         <button class="button gallery-button gallery-button-back" type="button">Назад</button>
         <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
       </section>
-
+      </div>
+      <div class="index-columns">
        <section class="contacts">
         <h2>Контактная информация</h2>
         <p>
@@ -143,6 +114,7 @@
           <button class="button" type="submit">Отправить</button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="main-footer">
       <p class="footer-contacts">
@@ -168,13 +140,36 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember">
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">
+          Войти
+        </button>
+      </form>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
     </section>
-
     <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
-    </section>
+     <h2 class="visually-hidden">Как до нас добраться</h2>
+     <p>
+       <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+     </p>
+     <button class="modal-close" type="button">Закрыть</button>
+   </section>
   </body>
 </html>
